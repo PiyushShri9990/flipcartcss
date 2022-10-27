@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Inconsolata&display=swap');
+
+:root {
+    --main-bg-color: #206de8;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: var(--main-bg-color);
+}
+
+nav {
+    display: flex;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    width: 87px;
+    padding: 0 20px;
+}
+
+nav ul {
+    height: 42px;
+    display: flex;
+    justify-content: flex-start;
+    align-content: center;
+
+}
+
+nav ul li {
+    list-style: none;
+    padding: 9px 14px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-family: 'Inconsolata', monospace;
+}
+
+nav ul li a:hover {
+    font-weight: bold;
+}
+
+.search {
+    display: flex;
+    align-items: center;
+}
+
+.search input {
+    width: 450px;
+    height: 20px;
+    border-radius: 3px;
+    margin: 0px 12px 0px 30px;
+    padding: 0 12px;
+}
+
+.search button {
+    font-family: 'Inconsolata', monospace;
+}
+
+.slider {
+    margin: 12px auto;
+    width: 64vw;
+    overflow: hidden;
+}
+
+nav div button:hover {
+    font-weight: bold;
+}
+
+main {
+    background-color: rgb(216, 213, 213);
+}
+
+.container {
+    /* min-width: calc(100vh - 60px - 3vh); */
+    min-height: calc(100vh - 42px - 2vh);
+}
+
+.card {
+    max-width: 92vw;
+    margin: auto;
+    background-color: white;
+}
+
+.cards {
+    display: flex;
+    align-items: center;
+    /* overflow: hidden; */
+    overflow: scroll;
+}
+
+.Card-Item {
+    display: inline-flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 8vw;
+    margin: 15px;
+}
+
+.card h2 {
+    font-family: 'Dancing Script', cursive;
+    /* font-family: 'Inconsolata', monospace; */
+}
+
+footer {
+    height: 2vh;
+    padding: 10px;
+    background-color: var(--main-bg-color);
+    color: white;
+    font-family: 'Inconsolata', monospace;
+}
